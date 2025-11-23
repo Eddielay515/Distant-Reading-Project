@@ -41,6 +41,12 @@ def main():
         "Book 4"
     )
 
+    # Book 5: "Pride and Prejudice" by Jane Austen
+    analyzer.add_book_from_url(
+        "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+        "Pride and Prejudice"
+    )
+
     # Or add books from local files
     # analyzer.add_book_from_file("path/to/your/book.txt", "My Book")
 
