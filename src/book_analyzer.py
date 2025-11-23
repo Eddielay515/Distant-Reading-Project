@@ -32,18 +32,25 @@ class BookAnalyzer:
         # Storage for books
         self.books = {}  # {book_name: raw_text}
         self.processed_books = {}  # {book_name: processed_data}
+        self.book_metadata = {}  # {book_name: {author, tags, url}}
 
-    def add_book_from_url(self, url: str, book_name: str) -> bool:
+    def add_book_from_url(self, url: str, book_name: str, author: str = "Unknown",
+                         tags: List[str] = None) -> bool:
         """
         Download and add a book from a URL.
 
         Args:
             url: URL to download the book from
             book_name: Name to assign to the book
+            author: Author of the book
+            tags: List of tags/categories for the book
 
         Returns:
             True if successful, False otherwise
         """
+        if tags is None:
+            tags = []
+
         try:
             print(f"Downloading {book_name} from {url}...")
             response = requests.get(url, timeout=30)
@@ -59,6 +66,11 @@ class BookAnalyzer:
                 f.write(text)
 
             self.books[book_name] = text
+            self.book_metadata[book_name] = {
+                'author': author,
+                'tags': tags,
+                'url': url
+            }
             print(f"✓ Successfully downloaded {book_name}")
             return True
 
@@ -272,3 +284,43 @@ class BookAnalyzer:
         print(f"  Unique to {book1}: {len(unique_to_1):,}")
         print(f"  Unique to {book2}: {len(unique_to_2):,}")
         print(f"  Jaccard similarity: {len(overlap) / len(vocab1 | vocab2):.4f}")
+
+    def get_all_tags(self) -> List[str]:
+        """
+        Get all unique tags from all books.
+
+        Returns:
+            List of unique tags
+        """
+        all_tags = set()
+        for metadata in self.book_metadata.values():
+            all_tags.update(metadata.get('tags', []))
+        return sorted(list(all_tags))
+
+    def get_books_by_tag(self, tag: str) -> List[str]:
+        """
+        Get all books that have a specific tag.
+
+        Args:
+            tag: Tag to filter by
+
+        Returns:
+            List of book names with that tag
+        """
+        books = []
+        for book_name, metadata in self.book_metadata.items():
+            if tag in metadata.get('tags', []):
+                books.append(book_name)
+        return books
+
+    def get_book_metadata(self, book_name: str) -> Optional[Dict]:
+        """
+        Get metadata for a specific book.
+
+        Args:
+            book_name: Name of the book
+
+        Returns:
+            Dictionary of metadata or None if book not found
+        """
+        return self.book_metadata.get(book_name)

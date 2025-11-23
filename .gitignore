@@ -51,3 +51,9 @@ results/*.txt
 
 # NLTK data
 nltk_data/
+
+# Flask
+instance/
+.webassets-cache
+__pycache__/
+*.pyc

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }} - Distant Reading Project{% endblock %}
+
+{% block content %}
+<div class="book-detail">
+    <div class="breadcrumb">
+        <a href="/">← Back to all books</a>
+    </div>
+
+    <div class="book-detail-header">
+        <h2>{{ book.title }}</h2>
+        <p class="book-author">by {{ book.author }}</p>
+    </div>
+
+    <div class="book-tags">
+        {% for tag in book.tags %}
+        <a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+    </div>
+
+    <div class="book-meta">
+        <p><strong>Source:</strong> <a href="{{ book.url }}" target="_blank">Project Gutenberg</a></p>
+    </div>
+
+    {% if book.stats %}
+    <section class="stats-section">
+        <h3>Text Statistics</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Words</div>
+                <div class="stat-value-large">{{ "{:,}".format(book.stats.word_count) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Unique Words</div>
+                <div class="stat-value-large">{{ "{:,}".format(book.stats.unique_words) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Sentences</div>
+                <div class="stat-value-large">{{ "{:,}".format(book.stats.sentence_count) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Vocabulary Richness</div>
+                <div class="stat-value-large">{{ "%.4f"|format(book.stats.vocabulary_richness) }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Avg Word Length</div>
+                <div class="stat-value-large">{{ "%.2f"|format(book.stats.average_word_length) }}</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frequency-section">
+        <h3>Most Common Words (After Stopword Removal & Lemmatization)</h3>
+        <div class="word-list">
+            {% for word, freq in book.stats.word_frequencies.items() %}
+            <div class="word-item">
+                <span class="word">{{ word }}</span>
+                <span class="freq">{{ freq }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% else %}
+    <section class="no-stats">
+        <p>This book has not been processed yet.</p>
+        <a href="/" class="btn btn-primary">Go back and process books</a>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

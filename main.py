@@ -16,35 +16,45 @@ def main():
     # Initialize the analyzer
     analyzer = BookAnalyzer()
 
-    # Add books from Project Gutenberg
+    # Add books from Project Gutenberg with tags
     # Book 1: "The Coming Race" by Edward Bulwer-Lytton
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/8492/pg8492.txt",
-        "The Coming Race"
+        "The Coming Race",
+        author="Edward Bulwer-Lytton",
+        tags=["Science Fiction", "Dystopian", "Classic", "19th Century"]
     )
 
     # Book 2: "Dracula" by Bram Stoker
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/345/pg345.txt",
-        "Dracula"
+        "Dracula",
+        author="Bram Stoker",
+        tags=["Horror", "Gothic", "Classic", "19th Century", "Vampires"]
     )
 
-    # Book 3: Gutenberg #5200
+    # Book 3: "Metamorphosis" by Franz Kafka
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/5200/pg5200.txt",
-        "Metamorphosis"
+        "Metamorphosis",
+        author="Franz Kafka",
+        tags=["Fiction", "Modernist", "Classic", "20th Century", "Existential"]
     )
 
     # Book 4: Gutenberg #6087
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/6087/pg6087.txt",
-        "Book 4"
+        "Book 4",
+        author="Unknown",
+        tags=["Classic"]
     )
 
     # Book 5: "Pride and Prejudice" by Jane Austen
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
-        "Pride and Prejudice"
+        "Pride and Prejudice",
+        author="Jane Austen",
+        tags=["Romance", "Classic", "19th Century", "Social Commentary"]
     )
 
     # Or add books from local files

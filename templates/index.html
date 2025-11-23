@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Browse Books - Distant Reading Project{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Book Collection</h2>
+    {% if selected_tag %}
+    <p class="filter-info">Showing books tagged with: <strong>{{ selected_tag }}</strong>
+        <a href="/" class="clear-filter">Clear filter</a>
+    </p>
+    {% endif %}
+</div>
+
+<section class="tags-section">
+    <h3>Browse by Tag</h3>
+    <div class="tags-container">
+        {% for tag in all_tags %}
+        <a href="/tag/{{ tag }}" class="tag {% if selected_tag == tag %}tag-active{% endif %}">
+            {{ tag }}
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="books-section">
+    <h3>Books ({{ books|length }})</h3>
+
+    {% if books|length == 0 %}
+    <p class="no-books">No books found with this tag.</p>
+    {% else %}
+    <div class="books-grid">
+        {% for book in books %}
+        <div class="book-card">
+            <div class="book-header">
+                <h4><a href="/book/{{ book.title }}">{{ book.title }}</a></h4>
+                <p class="book-author">by {{ book.author }}</p>
+            </div>
+
+            <div class="book-tags">
+                {% for tag in book.tags %}
+                <a href="/tag/{{ tag }}" class="tag tag-small">{{ tag }}</a>
+                {% endfor %}
+            </div>
+
+            {% if book.stats %}
+            <div class="book-stats">
+                <div class="stat">
+                    <span class="stat-label">Words:</span>
+                    <span class="stat-value">{{ "{:,}".format(book.stats.word_count) }}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Unique:</span>
+                    <span class="stat-value">{{ "{:,}".format(book.stats.unique_words) }}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Richness:</span>
+                    <span class="stat-value">{{ "%.3f"|format(book.stats.vocabulary_richness) }}</span>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="book-actions">
+                <a href="{{ book.url }}" target="_blank" class="btn btn-secondary">View Source</a>
+                <a href="/book/{{ book.title }}" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>
+
+<section class="actions-section">
+    <h3>Analysis Actions</h3>
+    <div class="actions-buttons">
+        <button onclick="processBooks()" class="btn btn-large">Process All Books</button>
+        <button onclick="analyzeBooks()" class="btn btn-large btn-primary">Generate Analysis</button>
+    </div>
+    <p class="action-note">Note: Processing may take a few moments. Analysis results will be saved to the 'results/' directory.</p>
+</section>
+
+<script>
+function processBooks() {
+    if (confirm('Process all books with tokenization, lemmatization, and stopword filtering?')) {
+        fetch('/process')
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                location.reload();
+            })
+            .catch(error => {
+                alert('Error processing books: ' + error);
+            });
+    }
+}
+
+function analyzeBooks() {
+    if (confirm('Generate comparative analysis and visualizations?')) {
+        fetch('/analyze')
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message + '\nCheck the results/ directory for visualizations.');
+            })
+            .catch(error => {
+                alert('Error generating analysis: ' + error);
+            });
+    }
+}
+</script>
+{% endblock %}

@@ -4,6 +4,8 @@ A comprehensive Python-based tool for comparative analysis of literary texts usi
 
 ## Features
 
+- **Web Interface**: Browse books with clickable tags for easy filtering
+- **Tag-Based Navigation**: Filter books by genre, time period, and other categories
 - **Text Processing**: Download and process texts from various sources (Project Gutenberg, local files)
 - **Tokenization**: Break down texts into words and sentences
 - **Lemmatization**: Reduce words to their base forms for better analysis
@@ -31,7 +33,23 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk
 
 ## Usage
 
-### Basic Analysis
+### Web Interface (Recommended)
+
+Launch the web interface to browse books with clickable tags:
+
+```bash
+python app.py
+```
+
+Then open your browser to `http://localhost:5000`
+
+Features:
+- Browse all books in the collection
+- Click on tags to filter books by category (Genre, Time Period, etc.)
+- View detailed statistics for each book
+- Process and analyze books directly from the web interface
+
+### Command Line Analysis
 
 ```python
 from src.book_analyzer import BookAnalyzer
