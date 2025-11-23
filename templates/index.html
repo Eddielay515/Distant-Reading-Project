@@ -61,8 +61,10 @@
             {% endif %}
 
             <div class="book-actions">
-                <a href="{{ book.url }}" target="_blank" class="btn btn-secondary">View Source</a>
-                <a href="/book/{{ book.title }}" class="btn btn-primary">Details</a>
+                {% if book.read_url %}
+                <a href="{{ book.read_url }}" target="_blank" class="btn btn-primary">Read on Gutenberg</a>
+                {% endif %}
+                <a href="/book/{{ book.title }}" class="btn btn-secondary">Details</a>
             </div>
         </div>
         {% endfor %}

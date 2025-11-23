@@ -6,11 +6,24 @@ Provides a browseable interface with clickable tags to filter books.
 from flask import Flask, render_template, request, jsonify
 from src.book_analyzer import BookAnalyzer
 import os
+import re
 
 app = Flask(__name__)
 
 # Initialize the book analyzer
 analyzer = BookAnalyzer()
+
+
+def extract_gutenberg_id(url):
+    """Extract Gutenberg book ID from URL."""
+    match = re.search(r'/epub/(\d+)/', url)
+    return match.group(1) if match else None
+
+
+def get_gutenberg_read_url(url):
+    """Get the Gutenberg reading page URL from raw text URL."""
+    book_id = extract_gutenberg_id(url)
+    return f"https://www.gutenberg.org/ebooks/{book_id}" if book_id else None
 
 # Add books with metadata and tags
 books_data = [
@@ -66,12 +79,14 @@ def index():
     for book_name in analyzer.books.keys():
         metadata = analyzer.get_book_metadata(book_name)
         stats = analyzer.get_book_statistics(book_name)
+        raw_url = metadata.get('url', '')
 
         books.append({
             'title': book_name,
             'author': metadata.get('author', 'Unknown'),
             'tags': metadata.get('tags', []),
-            'url': metadata.get('url', ''),
+            'url': raw_url,
+            'read_url': get_gutenberg_read_url(raw_url),
             'processed': book_name in analyzer.processed_books,
             'stats': stats if stats else None
         })
@@ -90,12 +105,14 @@ def filter_by_tag(tag):
     for book_name in book_names:
         metadata = analyzer.get_book_metadata(book_name)
         stats = analyzer.get_book_statistics(book_name)
+        raw_url = metadata.get('url', '')
 
         books.append({
             'title': book_name,
             'author': metadata.get('author', 'Unknown'),
             'tags': metadata.get('tags', []),
-            'url': metadata.get('url', ''),
+            'url': raw_url,
+            'read_url': get_gutenberg_read_url(raw_url),
             'processed': book_name in analyzer.processed_books,
             'stats': stats if stats else None
         })
@@ -112,11 +129,13 @@ def book_detail(title):
     if not metadata:
         return "Book not found", 404
 
+    raw_url = metadata.get('url', '')
     book_info = {
         'title': title,
         'author': metadata.get('author', 'Unknown'),
         'tags': metadata.get('tags', []),
-        'url': metadata.get('url', ''),
+        'url': raw_url,
+        'read_url': get_gutenberg_read_url(raw_url),
         'stats': stats
     }
 

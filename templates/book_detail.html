@@ -20,7 +20,17 @@
     </div>
 
     <div class="book-meta">
-        <p><strong>Source:</strong> <a href="{{ book.url }}" target="_blank">Project Gutenberg</a></p>
+        <p><strong>Source:</strong> Project Gutenberg</p>
+        {% if book.read_url %}
+        <p>
+            <a href="{{ book.read_url }}" target="_blank" class="btn btn-primary" style="margin-top: 0.5rem;">
+                📖 Read this book on Project Gutenberg
+            </a>
+        </p>
+        {% endif %}
+        <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+            <a href="{{ book.url }}" target="_blank" style="color: #6b7280;">Download raw text file</a>
+        </p>
     </div>
 
     {% if book.stats %}
