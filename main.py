@@ -29,6 +29,12 @@ def main():
         "Dracula"
     )
 
+    # Book 3: Gutenberg #5200
+    analyzer.add_book_from_url(
+        "https://www.gutenberg.org/cache/epub/5200/pg5200.txt",
+        "Metamorphosis"
+    )
+
     # Or add books from local files
     # analyzer.add_book_from_file("path/to/your/book.txt", "My Book")
 
