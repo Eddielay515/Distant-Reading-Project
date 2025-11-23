@@ -16,19 +16,18 @@ def main():
     # Initialize the analyzer
     analyzer = BookAnalyzer()
 
-    # Add the sample book from Project Gutenberg
-    # This is "The Coming Race" by Edward Bulwer-Lytton
+    # Add books from Project Gutenberg
+    # Book 1: "The Coming Race" by Edward Bulwer-Lytton
     analyzer.add_book_from_url(
         "https://www.gutenberg.org/cache/epub/8492/pg8492.txt",
         "The Coming Race"
     )
 
-    # You can add more books from URLs
-    # Example: Add another book for comparison
-    # analyzer.add_book_from_url(
-    #     "https://www.gutenberg.org/cache/epub/84/pg84.txt",
-    #     "Frankenstein"
-    # )
+    # Book 2: "Dracula" by Bram Stoker
+    analyzer.add_book_from_url(
+        "https://www.gutenberg.org/cache/epub/345/pg345.txt",
+        "Dracula"
+    )
 
     # Or add books from local files
     # analyzer.add_book_from_file("path/to/your/book.txt", "My Book")
@@ -71,6 +70,14 @@ def main():
             print(f"\n  Top 15 most common words:")
             for i, (word, freq) in enumerate(list(stats['word_frequencies'].items())[:15], 1):
                 print(f"    {i:2d}. {word:15s} - {freq:5d} occurrences")
+
+    # Compare the two books directly
+    if len(analyzer.processed_books) >= 2:
+        print("\n" + "="*80)
+        print("DIRECT COMPARISON")
+        print("="*80)
+        book_names = list(analyzer.processed_books.keys())
+        analyzer.compare_books(book_names[0], book_names[1])
 
     print("\n" + "="*80)
     print("Analysis complete! Check the 'results/' directory for visualizations.")
