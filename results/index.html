@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distant Reading Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Distant Reading Analysis</h1>
+            <p class="subtitle">Comparative Analysis of Classic Literature</p>
+        </header>
+
+        <nav class="main-nav">
+            <button class="nav-btn active" data-view="home">Home</button>
+            <button class="nav-btn" data-view="comparison">Compare Books</button>
+        </nav>
+
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            <section class="tags-section">
+                <h2>Filter by Tag</h2>
+                <div id="tags-container" class="tags-container">
+                    <!-- Tags will be dynamically inserted here -->
+                </div>
+                <button id="clear-filters" class="btn-secondary" style="display:none;">Clear Filters</button>
+            </section>
+
+            <section class="books-section">
+                <h2 id="books-heading">All Books</h2>
+                <div id="books-grid" class="books-grid">
+                    <!-- Book cards will be dynamically inserted here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Book Detail View -->
+        <div id="book-detail-view" class="view">
+            <button id="back-to-home" class="btn-secondary">← Back to Home</button>
+            <div id="book-detail-content">
+                <!-- Book detail will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Comparison View -->
+        <div id="comparison-view" class="view">
+            <h2>Compare Books</h2>
+            <p class="instruction">Select 2 or more books to compare</p>
+
+            <div class="book-selection">
+                <div id="comparison-book-list" class="comparison-book-list">
+                    <!-- Checkboxes for book selection will be inserted here -->
+                </div>
+            </div>
+
+            <button id="compare-btn" class="btn-primary" disabled>Compare Selected Books</button>
+
+            <div id="comparison-results" class="comparison-results">
+                <!-- Comparison results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Generated with Python NLP Analysis | VADER Sentiment | TF-IDF | Style Metrics</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

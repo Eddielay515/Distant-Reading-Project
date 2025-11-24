@@ -1,0 +1,1318 @@
+{
+  "books": [
+    {
+      "title": "The Coming Race",
+      "author": "Edward Bulwer-Lytton",
+      "tags": [
+        "Science Fiction",
+        "Dystopian",
+        "Classic",
+        "19th Century"
+      ],
+      "bag_of_words": {
+        "surface": 7,
+        "yet": 6,
+        "race": 3,
+        "underground": 3,
+        "beyond": 3,
+        "energy": 3,
+        "called": 3,
+        "vril": 3,
+        "mind": 3,
+        "beneath": 3,
+        "earth": 3,
+        "could": 3,
+        "society": 3,
+        "power": 3,
+        "never": 3,
+        "world": 3,
+        "day": 3,
+        "war": 2,
+        "somewhat": 2,
+        "social": 2,
+        "also": 2,
+        "lived": 2,
+        "partly": 2,
+        "education": 2,
+        "powers": 2,
+        "dwellers": 2,
+        "civilization": 2,
+        "advanced": 2,
+        "seen": 2,
+        "beauty": 2,
+        "operated": 2,
+        "individual": 2,
+        "air": 2,
+        "women": 2,
+        "held": 2,
+        "light": 2,
+        "life": 2,
+        "great": 2,
+        "petty": 2,
+        "conflicts": 2,
+        "humanity": 2,
+        "believed": 2,
+        "crime": 2,
+        "realm": 2,
+        "might": 2,
+        "emerge": 2,
+        "would": 2,
+        "coming": 1,
+        "edward": 1,
+        "chapter": 1,
+        "native": 1,
+        "united": 1,
+        "states": 1,
+        "america": 1,
+        "ancestors": 1,
+        "migrated": 1,
+        "england": 1,
+        "reign": 1,
+        "charles": 1,
+        "ii": 1,
+        "grandfather": 1,
+        "undistinguished": 1,
+        "independence": 1,
+        "family": 1,
+        "therefore": 1,
+        "enjoyed": 1,
+        "high": 1,
+        "position": 1,
+        "right": 1,
+        "birth": 1,
+        "opulent": 1,
+        "considered": 1,
+        "disqualified": 1,
+        "public": 1,
+        "service": 1,
+        "father": 1,
+        "ran": 1,
+        "congress": 1,
+        "signally": 1,
+        "defeated": 1,
+        "tailor": 1,
+        "event": 1,
+        "interfered": 1,
+        "little": 1,
+        "politics": 1,
+        "much": 1,
+        "library": 1,
+        "eldest": 1,
+        "three": 1,
+        "sons": 1,
+        "sent": 1,
+        "age": 1,
+        "sixteen": 1,
+        "old": 1,
+        "country": 1,
+        "complete": 1,
+        "literary": 1,
+        "commence": 1,
+        "commercial": 1,
+        "training": 1
+      },
+      "tfidf_descriptive_words": [
+        {
+          "word": "surface",
+          "score": 0.3375
+        },
+        {
+          "word": "vril",
+          "score": 0.1793
+        },
+        {
+          "word": "race",
+          "score": 0.1793
+        },
+        {
+          "word": "called",
+          "score": 0.1793
+        },
+        {
+          "word": "beneath",
+          "score": 0.1793
+        },
+        {
+          "word": "yet",
+          "score": 0.1708
+        },
+        {
+          "word": "mind",
+          "score": 0.1446
+        },
+        {
+          "word": "power",
+          "score": 0.1446
+        },
+        {
+          "word": "energy",
+          "score": 0.1446
+        },
+        {
+          "word": "world",
+          "score": 0.1446
+        },
+        {
+          "word": "beyond",
+          "score": 0.1446
+        },
+        {
+          "word": "underground",
+          "score": 0.1446
+        },
+        {
+          "word": "society",
+          "score": 0.1201
+        },
+        {
+          "word": "earth",
+          "score": 0.1201
+        },
+        {
+          "word": "day",
+          "score": 0.1201
+        },
+        {
+          "word": "partly",
+          "score": 0.1195
+        },
+        {
+          "word": "crime",
+          "score": 0.1195
+        },
+        {
+          "word": "war",
+          "score": 0.1195
+        },
+        {
+          "word": "realm",
+          "score": 0.1195
+        },
+        {
+          "word": "petty",
+          "score": 0.1195
+        },
+        {
+          "word": "individual",
+          "score": 0.1195
+        },
+        {
+          "word": "held",
+          "score": 0.1195
+        },
+        {
+          "word": "operated",
+          "score": 0.1195
+        },
+        {
+          "word": "women",
+          "score": 0.1195
+        },
+        {
+          "word": "conflicts",
+          "score": 0.1195
+        },
+        {
+          "word": "dwellers",
+          "score": 0.1195
+        },
+        {
+          "word": "somewhat",
+          "score": 0.1195
+        },
+        {
+          "word": "beauty",
+          "score": 0.1195
+        },
+        {
+          "word": "education",
+          "score": 0.1195
+        },
+        {
+          "word": "advanced",
+          "score": 0.1195
+        }
+      ],
+      "sentiment": {
+        "compound": 0.9974,
+        "positive": 0.182,
+        "negative": 0.098,
+        "neutral": 0.72
+      },
+      "style_metrics": {
+        "total_words": 651,
+        "unique_words": 351,
+        "total_sentences": 41,
+        "vocabulary_richness": 0.5392,
+        "average_word_length": 5.1,
+        "average_sentence_length": 15.88,
+        "lexical_diversity": 0.5392,
+        "flesch_reading_ease": 49.38,
+        "flesch_kincaid_grade": 10.35,
+        "pos_distribution": {
+          "NN": 20.89,
+          "IN": 13.21,
+          "DT": 9.06,
+          "JJ": 8.91,
+          "VBD": 8.91,
+          "NNS": 6.3,
+          "RB": 5.99,
+          "PRP$": 4.15,
+          "CC": 3.99,
+          "PRP": 3.69
+        }
+      }
+    },
+    {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "tags": [
+        "Horror",
+        "Gothic",
+        "Classic",
+        "19th Century",
+        "Vampires"
+      ],
+      "bag_of_words": {
+        "count": 9,
+        "would": 5,
+        "could": 4,
+        "walk": 4,
+        "castle": 4,
+        "dracula": 3,
+        "dark": 3,
+        "something": 3,
+        "old": 3,
+        "terrible": 3,
+        "escape": 3,
+        "undead": 3,
+        "spoke": 3,
+        "life": 3,
+        "must": 3,
+        "journal": 2,
+        "may": 2,
+        "arrived": 2,
+        "train": 2,
+        "late": 2,
+        "place": 2,
+        "feared": 2,
+        "among": 2,
+        "yet": 2,
+        "ancient": 2,
+        "supernatural": 2,
+        "powers": 2,
+        "become": 2,
+        "cursed": 2,
+        "feeding": 2,
+        "plans": 2,
+        "england": 2,
+        "warn": 2,
+        "others": 2,
+        "find": 2,
+        "way": 2,
+        "cost": 2,
+        "might": 2,
+        "knew": 2,
+        "truth": 2,
+        "existence": 2,
+        "evil": 2,
+        "bram": 1,
+        "stoker": 1,
+        "jonathan": 1,
+        "harker": 1,
+        "munich": 1,
+        "arriving": 1,
+        "vienna": 1,
+        "early": 1,
+        "next": 1,
+        "morning": 1,
+        "hour": 1,
+        "seems": 1,
+        "wonderful": 1,
+        "glimpse": 1,
+        "got": 1,
+        "little": 1,
+        "streets": 1,
+        "go": 1,
+        "far": 1,
+        "station": 1,
+        "start": 1,
+        "near": 1,
+        "correct": 1,
+        "time": 1,
+        "possible": 1,
+        "impression": 1,
+        "leaving": 1,
+        "west": 1,
+        "entering": 1,
+        "east": 1,
+        "western": 1,
+        "splendid": 1,
+        "bridges": 1,
+        "danube": 1,
+        "noble": 1,
+        "width": 1,
+        "depth": 1,
+        "took": 1,
+        "us": 1,
+        "traditions": 1,
+        "turkish": 1,
+        "rule": 1,
+        "loomed": 1,
+        "forbidding": 1,
+        "moonlit": 1,
+        "sky": 1,
+        "welcomed": 1,
+        "politeness": 1,
+        "seemed": 1,
+        "almost": 1,
+        "excessive": 1,
+        "manner": 1,
+        "made": 1,
+        "uneasy": 1,
+        "hands": 1,
+        "cold": 1,
+        "ice": 1,
+        "grip": 1
+      },
+      "tfidf_descriptive_words": [
+        {
+          "word": "count",
+          "score": 0.4927
+        },
+        {
+          "word": "walk",
+          "score": 0.219
+        },
+        {
+          "word": "castle",
+          "score": 0.219
+        },
+        {
+          "word": "dracula",
+          "score": 0.1642
+        },
+        {
+          "word": "escape",
+          "score": 0.1642
+        },
+        {
+          "word": "undead",
+          "score": 0.1642
+        },
+        {
+          "word": "dark",
+          "score": 0.1325
+        },
+        {
+          "word": "old",
+          "score": 0.1325
+        },
+        {
+          "word": "terrible",
+          "score": 0.1325
+        },
+        {
+          "word": "would",
+          "score": 0.1304
+        },
+        {
+          "word": "something",
+          "score": 0.11
+        },
+        {
+          "word": "spoke",
+          "score": 0.11
+        },
+        {
+          "word": "must",
+          "score": 0.11
+        },
+        {
+          "word": "feared",
+          "score": 0.1095
+        },
+        {
+          "word": "cost",
+          "score": 0.1095
+        },
+        {
+          "word": "supernatural",
+          "score": 0.1095
+        },
+        {
+          "word": "find",
+          "score": 0.1095
+        },
+        {
+          "word": "journal",
+          "score": 0.1095
+        },
+        {
+          "word": "cursed",
+          "score": 0.1095
+        },
+        {
+          "word": "way",
+          "score": 0.1095
+        },
+        {
+          "word": "others",
+          "score": 0.1095
+        },
+        {
+          "word": "warn",
+          "score": 0.1095
+        },
+        {
+          "word": "train",
+          "score": 0.1095
+        },
+        {
+          "word": "plans",
+          "score": 0.1095
+        },
+        {
+          "word": "evil",
+          "score": 0.1095
+        },
+        {
+          "word": "late",
+          "score": 0.1095
+        },
+        {
+          "word": "could",
+          "score": 0.1044
+        },
+        {
+          "word": "life",
+          "score": 0.0925
+        },
+        {
+          "word": "existence",
+          "score": 0.0883
+        },
+        {
+          "word": "arrived",
+          "score": 0.0883
+        }
+      ],
+      "sentiment": {
+        "compound": -0.9946,
+        "positive": 0.114,
+        "negative": 0.172,
+        "neutral": 0.714
+      },
+      "style_metrics": {
+        "total_words": 656,
+        "unique_words": 353,
+        "total_sentences": 41,
+        "vocabulary_richness": 0.5381,
+        "average_word_length": 4.64,
+        "average_sentence_length": 16.0,
+        "lexical_diversity": 0.5381,
+        "flesch_reading_ease": 65.51,
+        "flesch_kincaid_grade": 8.04,
+        "pos_distribution": {
+          "NN": 19.05,
+          "IN": 11.28,
+          "DT": 10.82,
+          "JJ": 9.76,
+          "VBD": 7.62,
+          "VB": 5.49,
+          "NNS": 5.18,
+          "RB": 4.57,
+          "CC": 3.96,
+          "PRP": 3.66
+        }
+      }
+    },
+    {
+      "title": "Metamorphosis",
+      "author": "Franz Kafka",
+      "tags": [
+        "Fiction",
+        "Modernist",
+        "Classic",
+        "20th Century",
+        "Existential"
+      ],
+      "bag_of_words": {
+        "family": 10,
+        "gregor": 9,
+        "human": 9,
+        "samsa": 5,
+        "room": 5,
+        "insect": 5,
+        "thought": 4,
+        "father": 4,
+        "grete": 4,
+        "life": 4,
+        "one": 3,
+        "found": 3,
+        "lay": 3,
+        "back": 3,
+        "could": 3,
+        "would": 3,
+        "transformation": 3,
+        "took": 3,
+        "thoughts": 3,
+        "metamorphosis": 2,
+        "morning": 2,
+        "bed": 2,
+        "horrible": 2,
+        "little": 2,
+        "moment": 2,
+        "legs": 2,
+        "compared": 2,
+        "waved": 2,
+        "small": 2,
+        "familiar": 2,
+        "walls": 2,
+        "filled": 2,
+        "depended": 2,
+        "income": 2,
+        "mother": 2,
+        "sister": 2,
+        "body": 2,
+        "concern": 2,
+        "provider": 2,
+        "become": 2,
+        "trapped": 2,
+        "understood": 2,
+        "consciousness": 2,
+        "form": 2,
+        "door": 2,
+        "burden": 2,
+        "away": 2,
+        "even": 2,
+        "work": 2,
+        "lodgers": 2,
+        "truths": 2,
+        "becoming": 2,
+        "merely": 2,
+        "made": 2,
+        "spoke": 2,
+        "wound": 2,
+        "nothing": 2,
+        "forgotten": 2,
+        "death": 2,
+        "relief": 2,
+        "yet": 2,
+        "existence": 2,
+        "faded": 2,
+        "felt": 2,
+        "franz": 1,
+        "kafka": 1,
+        "translated": 1,
+        "david": 1,
+        "wyllie": 1,
+        "woke": 1,
+        "troubled": 1,
+        "dreams": 1,
+        "transformed": 1,
+        "vermin": 1,
+        "lifted": 1,
+        "head": 1,
+        "see": 1,
+        "brown": 1,
+        "belly": 1,
+        "slightly": 1,
+        "domed": 1,
+        "divided": 1,
+        "arches": 1,
+        "stiff": 1,
+        "sections": 1,
+        "bedding": 1,
+        "hardly": 1,
+        "able": 1,
+        "cover": 1,
+        "seemed": 1,
+        "ready": 1,
+        "slide": 1,
+        "many": 1,
+        "pitifully": 1,
+        "thin": 1,
+        "size": 1,
+        "rest": 1,
+        "helplessly": 1,
+        "looked": 1,
+        "happened": 1
+      },
+      "tfidf_descriptive_words": [
+        {
+          "word": "gregor",
+          "score": 0.4017
+        },
+        {
+          "word": "human",
+          "score": 0.2263
+        },
+        {
+          "word": "room",
+          "score": 0.2231
+        },
+        {
+          "word": "insect",
+          "score": 0.2231
+        },
+        {
+          "word": "samsa",
+          "score": 0.2231
+        },
+        {
+          "word": "family",
+          "score": 0.2127
+        },
+        {
+          "word": "grete",
+          "score": 0.1785
+        },
+        {
+          "word": "thought",
+          "score": 0.144
+        },
+        {
+          "word": "father",
+          "score": 0.144
+        },
+        {
+          "word": "transformation",
+          "score": 0.1339
+        },
+        {
+          "word": "lay",
+          "score": 0.1339
+        },
+        {
+          "word": "took",
+          "score": 0.108
+        },
+        {
+          "word": "life",
+          "score": 0.1006
+        },
+        {
+          "word": "back",
+          "score": 0.0897
+        },
+        {
+          "word": "thoughts",
+          "score": 0.0897
+        },
+        {
+          "word": "body",
+          "score": 0.0893
+        },
+        {
+          "word": "relief",
+          "score": 0.0893
+        },
+        {
+          "word": "burden",
+          "score": 0.0893
+        },
+        {
+          "word": "consciousness",
+          "score": 0.0893
+        },
+        {
+          "word": "form",
+          "score": 0.0893
+        },
+        {
+          "word": "provider",
+          "score": 0.0893
+        },
+        {
+          "word": "felt",
+          "score": 0.0893
+        },
+        {
+          "word": "familiar",
+          "score": 0.0893
+        },
+        {
+          "word": "forgotten",
+          "score": 0.0893
+        },
+        {
+          "word": "nothing",
+          "score": 0.0893
+        },
+        {
+          "word": "walls",
+          "score": 0.0893
+        },
+        {
+          "word": "income",
+          "score": 0.0893
+        },
+        {
+          "word": "death",
+          "score": 0.0893
+        },
+        {
+          "word": "merely",
+          "score": 0.0893
+        },
+        {
+          "word": "metamorphosis",
+          "score": 0.0893
+        }
+      ],
+      "sentiment": {
+        "compound": -0.998,
+        "positive": 0.09,
+        "negative": 0.173,
+        "neutral": 0.736
+      },
+      "style_metrics": {
+        "total_words": 877,
+        "unique_words": 414,
+        "total_sentences": 55,
+        "vocabulary_richness": 0.4721,
+        "average_word_length": 4.67,
+        "average_sentence_length": 15.95,
+        "lexical_diversity": 0.4721,
+        "flesch_reading_ease": 61.22,
+        "flesch_kincaid_grade": 8.76,
+        "pos_distribution": {
+          "NN": 19.61,
+          "IN": 12.77,
+          "VBD": 10.03,
+          "DT": 8.67,
+          "JJ": 8.32,
+          "PRP$": 6.39,
+          "PRP": 6.04,
+          "RB": 4.79,
+          "VBN": 4.33,
+          "NNS": 3.53
+        }
+      }
+    },
+    {
+      "title": "Book 4",
+      "author": "Unknown",
+      "tags": [
+        "Classic"
+      ],
+      "bag_of_words": {
+        "uncle": 9,
+        "earth": 8,
+        "us": 7,
+        "journey": 6,
+        "one": 5,
+        "ancient": 5,
+        "center": 4,
+        "martha": 4,
+        "hans": 4,
+        "would": 4,
+        "volcanic": 4,
+        "underground": 4,
+        "professor": 3,
+        "liedenbrock": 3,
+        "possessed": 3,
+        "discovered": 3,
+        "icelandic": 3,
+        "found": 3,
+        "saknussemm": 3,
+        "interior": 3,
+        "scientific": 3,
+        "far": 3,
+        "rock": 3,
+        "iceland": 3,
+        "surface": 3,
+        "subterranean": 3,
+        "ocean": 3,
+        "creatures": 3,
+        "prehistoric": 3,
+        "life": 3,
+        "though": 3,
+        "project": 2,
+        "gutenberg": 2,
+        "ebook": 2,
+        "oldest": 2,
+        "hamburg": 2,
+        "dinner": 2,
+        "make": 2,
+        "great": 2,
+        "half": 2,
+        "yet": 2,
+        "perhaps": 2,
+        "tell": 2,
+        "axel": 2,
+        "man": 2,
+        "determination": 2,
+        "mysterious": 2,
+        "something": 2,
+        "extraordinary": 2,
+        "message": 2,
+        "incredible": 2,
+        "directions": 2,
+        "leading": 2,
+        "alchemist": 2,
+        "crater": 2,
+        "extinct": 2,
+        "snaefells": 2,
+        "could": 2,
+        "became": 2,
+        "understanding": 2,
+        "seemed": 2,
+        "theory": 2,
+        "guide": 2,
+        "adventure": 2,
+        "followed": 2,
+        "deeper": 2,
+        "human": 2,
+        "days": 2,
+        "passages": 2,
+        "gas": 2,
+        "beyond": 2,
+        "thought": 2,
+        "seeing": 2,
+        "history": 2,
+        "structure": 2,
+        "raft": 2,
+        "across": 2,
+        "living": 2,
+        "depths": 2,
+        "world": 2,
+        "electrical": 2,
+        "cavern": 2,
+        "nearly": 2,
+        "losing": 2,
+        "hope": 2,
+        "remained": 2,
+        "never": 2,
+        "ever": 2,
+        "evidence": 2,
+        "discoveries": 2,
+        "knew": 2,
+        "eruption": 2,
+        "explosion": 2,
+        "upward": 2,
+        "miles": 2,
+        "finally": 2,
+        "returned": 2,
+        "greatest": 2,
+        "start": 1,
+        "jules": 1
+      },
+      "tfidf_descriptive_words": [
+        {
+          "word": "uncle",
+          "score": 0.2848
+        },
+        {
+          "word": "journey",
+          "score": 0.2353
+        },
+        {
+          "word": "earth",
+          "score": 0.2101
+        },
+        {
+          "word": "us",
+          "score": 0.1839
+        },
+        {
+          "word": "ancient",
+          "score": 0.1582
+        },
+        {
+          "word": "hans",
+          "score": 0.1569
+        },
+        {
+          "word": "martha",
+          "score": 0.1569
+        },
+        {
+          "word": "volcanic",
+          "score": 0.1569
+        },
+        {
+          "word": "center",
+          "score": 0.1569
+        },
+        {
+          "word": "underground",
+          "score": 0.1266
+        },
+        {
+          "word": "liedenbrock",
+          "score": 0.1177
+        },
+        {
+          "word": "prehistoric",
+          "score": 0.1177
+        },
+        {
+          "word": "icelandic",
+          "score": 0.1177
+        },
+        {
+          "word": "saknussemm",
+          "score": 0.1177
+        },
+        {
+          "word": "interior",
+          "score": 0.1177
+        },
+        {
+          "word": "scientific",
+          "score": 0.1177
+        },
+        {
+          "word": "professor",
+          "score": 0.1177
+        },
+        {
+          "word": "creatures",
+          "score": 0.1177
+        },
+        {
+          "word": "iceland",
+          "score": 0.1177
+        },
+        {
+          "word": "ocean",
+          "score": 0.1177
+        },
+        {
+          "word": "one",
+          "score": 0.1105
+        },
+        {
+          "word": "rock",
+          "score": 0.0949
+        },
+        {
+          "word": "surface",
+          "score": 0.0949
+        },
+        {
+          "word": "subterranean",
+          "score": 0.0949
+        },
+        {
+          "word": "discovered",
+          "score": 0.0788
+        },
+        {
+          "word": "far",
+          "score": 0.0788
+        },
+        {
+          "word": "possessed",
+          "score": 0.0788
+        },
+        {
+          "word": "axel",
+          "score": 0.0784
+        },
+        {
+          "word": "losing",
+          "score": 0.0784
+        },
+        {
+          "word": "across",
+          "score": 0.0784
+        }
+      ],
+      "sentiment": {
+        "compound": 0.9881,
+        "positive": 0.112,
+        "negative": 0.086,
+        "neutral": 0.802
+      },
+      "style_metrics": {
+        "total_words": 973,
+        "unique_words": 466,
+        "total_sentences": 65,
+        "vocabulary_richness": 0.4789,
+        "average_word_length": 5.07,
+        "average_sentence_length": 14.97,
+        "lexical_diversity": 0.4789,
+        "flesch_reading_ease": 52.29,
+        "flesch_kincaid_grade": 9.71,
+        "pos_distribution": {
+          "NN": 19.42,
+          "IN": 12.23,
+          "JJ": 10.79,
+          "DT": 9.35,
+          "VBD": 7.5,
+          "NNS": 6.17,
+          "RB": 5.76,
+          "PRP": 4.62,
+          "PRP$": 4.01,
+          "CC": 3.91
+        }
+      }
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "tags": [
+        "Romance",
+        "Classic",
+        "19th Century",
+        "Social Commentary"
+      ],
+      "bag_of_words": {
+        "elizabeth": 14,
+        "darcy": 13,
+        "pride": 7,
+        "one": 6,
+        "bennet": 6,
+        "wickham": 6,
+        "first": 5,
+        "character": 5,
+        "learned": 5,
+        "prejudice": 4,
+        "would": 4,
+        "judgment": 4,
+        "affection": 4,
+        "jane": 3,
+        "truth": 3,
+        "man": 3,
+        "fortune": 3,
+        "must": 3,
+        "want": 3,
+        "feelings": 3,
+        "lady": 3,
+        "netherfield": 3,
+        "young": 3,
+        "bingley": 3,
+        "encountered": 3,
+        "estate": 3,
+        "proposal": 3,
+        "could": 3,
+        "genuine": 3,
+        "love": 3,
+        "family": 3,
+        "despite": 3,
+        "respect": 3,
+        "overcome": 3,
+        "possession": 2,
+        "wife": 2,
+        "daughters": 2,
+        "dear": 2,
+        "day": 2,
+        "long": 2,
+        "told": 2,
+        "know": 2,
+        "taken": 2,
+        "enough": 2,
+        "came": 2,
+        "see": 2,
+        "next": 2,
+        "particularly": 2,
+        "proud": 2,
+        "found": 2,
+        "yet": 2,
+        "failed": 2,
+        "wounded": 2,
+        "insulting": 2,
+        "refusal": 2,
+        "practical": 2,
+        "match": 2,
+        "charlotte": 2,
+        "accepted": 2,
+        "new": 2,
+        "catherine": 2,
+        "regarding": 2,
+        "accept": 2,
+        "happiness": 2,
+        "revealed": 2,
+        "debts": 2,
+        "completely": 2,
+        "deep": 2,
+        "saw": 2,
+        "depth": 2,
+        "lydia": 2,
+        "hope": 2,
+        "loved": 2,
+        "austen": 1,
+        "chapter": 1,
+        "universally": 1,
+        "acknowledged": 1,
+        "single": 1,
+        "good": 1,
+        "however": 1,
+        "little": 1,
+        "known": 1,
+        "views": 1,
+        "may": 1,
+        "entering": 1,
+        "neighbourhood": 1,
+        "well": 1,
+        "fixed": 1,
+        "minds": 1,
+        "surrounding": 1,
+        "families": 1,
+        "considered": 1,
+        "rightful": 1,
+        "property": 1,
+        "said": 1,
+        "heard": 1,
+        "park": 1,
+        "let": 1,
+        "last": 1,
+        "replied": 1
+      },
+      "tfidf_descriptive_words": [
+        {
+          "word": "elizabeth",
+          "score": 0.4602
+        },
+        {
+          "word": "darcy",
+          "score": 0.4273
+        },
+        {
+          "word": "pride",
+          "score": 0.2301
+        },
+        {
+          "word": "bennet",
+          "score": 0.1972
+        },
+        {
+          "word": "wickham",
+          "score": 0.1972
+        },
+        {
+          "word": "character",
+          "score": 0.1644
+        },
+        {
+          "word": "learned",
+          "score": 0.1326
+        },
+        {
+          "word": "judgment",
+          "score": 0.1315
+        },
+        {
+          "word": "prejudice",
+          "score": 0.1315
+        },
+        {
+          "word": "one",
+          "score": 0.1111
+        },
+        {
+          "word": "first",
+          "score": 0.1101
+        },
+        {
+          "word": "affection",
+          "score": 0.1061
+        },
+        {
+          "word": "bingley",
+          "score": 0.0986
+        },
+        {
+          "word": "respect",
+          "score": 0.0986
+        },
+        {
+          "word": "want",
+          "score": 0.0986
+        },
+        {
+          "word": "overcome",
+          "score": 0.0986
+        },
+        {
+          "word": "jane",
+          "score": 0.0986
+        },
+        {
+          "word": "proposal",
+          "score": 0.0986
+        },
+        {
+          "word": "netherfield",
+          "score": 0.0986
+        },
+        {
+          "word": "lady",
+          "score": 0.0986
+        },
+        {
+          "word": "estate",
+          "score": 0.0986
+        },
+        {
+          "word": "genuine",
+          "score": 0.0986
+        },
+        {
+          "word": "encountered",
+          "score": 0.0986
+        },
+        {
+          "word": "fortune",
+          "score": 0.0986
+        },
+        {
+          "word": "love",
+          "score": 0.0796
+        },
+        {
+          "word": "young",
+          "score": 0.0796
+        },
+        {
+          "word": "feelings",
+          "score": 0.0796
+        },
+        {
+          "word": "despite",
+          "score": 0.0796
+        },
+        {
+          "word": "truth",
+          "score": 0.066
+        },
+        {
+          "word": "must",
+          "score": 0.066
+        }
+      ],
+      "sentiment": {
+        "compound": 0.9975,
+        "positive": 0.207,
+        "negative": 0.147,
+        "neutral": 0.646
+      },
+      "style_metrics": {
+        "total_words": 959,
+        "unique_words": 418,
+        "total_sentences": 56,
+        "vocabulary_richness": 0.4359,
+        "average_word_length": 4.96,
+        "average_sentence_length": 17.12,
+        "lexical_diversity": 0.4359,
+        "flesch_reading_ease": 55.15,
+        "flesch_kincaid_grade": 9.31,
+        "pos_distribution": {
+          "NN": 19.4,
+          "IN": 12.72,
+          "JJ": 8.65,
+          "VBD": 8.13,
+          "PRP": 7.4,
+          "DT": 6.15,
+          "PRP$": 5.32,
+          "RB": 4.69,
+          "VB": 4.59,
+          "CC": 4.38
+        }
+      }
+    }
+  ]
+}
