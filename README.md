@@ -33,9 +33,25 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk
 
 ## Usage
 
-### Web Interface (Recommended)
+### Static Website (No Installation Required!)
 
-Launch the web interface to browse books with clickable tags:
+**Easiest option**: Just open the website in your browser - no Python, no installation needed!
+
+1. Navigate to the `web` directory
+2. Open `index.html` in any web browser
+3. Browse books and click tags to filter by category
+
+The static website includes:
+- All 5 books with clickable tag navigation
+- Direct links to read books on Project Gutenberg
+- Full responsive design
+- Works offline (after first load)
+
+See `web/README.md` for deployment options (GitHub Pages, Netlify, etc.)
+
+### Flask Web Interface (Requires Python)
+
+Launch the dynamic Flask interface for processing and analysis:
 
 ```bash
 python app.py

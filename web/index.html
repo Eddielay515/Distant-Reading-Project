@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distant Reading Project - Book Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><a href="index.html">📚 Distant Reading Project</a></h1>
+                <p class="tagline">Comparative Book Analysis with NLP</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Book Collection</h2>
+            <p class="filter-info" id="filterInfo" style="display: none;">
+                Showing books tagged with: <strong id="selectedTag"></strong>
+                <a href="#" onclick="clearFilter(); return false;" class="clear-filter">Clear filter</a>
+            </p>
+        </div>
+
+        <section class="tags-section">
+            <h3>Browse by Tag</h3>
+            <div class="tags-container" id="tagsContainer">
+                <!-- Tags will be dynamically generated -->
+            </div>
+        </section>
+
+        <section class="books-section">
+            <h3>Books (<span id="bookCount">0</span>)</h3>
+            <div class="books-grid" id="booksGrid">
+                <!-- Books will be dynamically generated -->
+            </div>
+            <p class="no-books" id="noBooks" style="display: none;">No books found with this tag.</p>
+        </section>
+
+        <section class="actions-section">
+            <h3>About This Collection</h3>
+            <p>This collection features classic literature from Project Gutenberg, analyzed using natural language processing techniques including tokenization, lemmatization, and stopword filtering.</p>
+            <p style="margin-top: 1rem;">All books are freely available to read online. Click on any book's "Read on Gutenberg" button to start reading.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Distant Reading Project - Text Processing, Tokenization, Lemmatization & Stopword Filtering</p>
+            <p>All books from <a href="https://www.gutenberg.org" target="_blank">Project Gutenberg</a></p>
+        </div>
+    </footer>
+
+    <script src="js/books-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

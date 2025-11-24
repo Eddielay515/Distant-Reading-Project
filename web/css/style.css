@@ -1,0 +1,431 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+header .tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+main.container {
+    padding: 2rem;
+    min-height: calc(100vh - 250px);
+}
+
+/* Page Header */
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.filter-info {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.clear-filter {
+    color: #dc2626;
+    margin-left: 1rem;
+}
+
+/* Tags Section */
+.tags-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.tags-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e5e7eb;
+    color: #374151;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.tag:hover {
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.tag-active {
+    background: #667eea;
+    color: white;
+}
+
+.tag-small {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+/* Books Section */
+.books-section {
+    margin-bottom: 2rem;
+}
+
+.books-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.book-header h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #1f2937;
+}
+
+.book-header h4 a {
+    color: #1f2937;
+}
+
+.book-author {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.book-tags {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.book-stats {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.book-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5568d3;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.btn-secondary:hover {
+    background: #d1d5db;
+    text-decoration: none;
+}
+
+.btn-large {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+/* Actions Section */
+.actions-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.actions-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.actions-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.action-note {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Book Detail */
+.book-detail {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.book-detail-header {
+    margin-bottom: 1rem;
+}
+
+.book-detail-header h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.book-meta {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 6px;
+}
+
+.stats-section {
+    margin: 2rem 0;
+}
+
+.stats-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-value-large {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-top: 0.5rem;
+}
+
+.frequency-section {
+    margin: 2rem 0;
+}
+
+.frequency-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.word-list {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.word-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.word-item:last-child {
+    border-bottom: none;
+}
+
+.word {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.freq {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.no-stats {
+    padding: 3rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+.no-books {
+    padding: 2rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: #9ca3af;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-buttons {
+        flex-direction: column;
+    }
+}
